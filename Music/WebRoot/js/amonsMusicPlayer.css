@@ -1,0 +1,46 @@
+			/*音乐播放器*/
+			
+			    @-webkit-keyframes "buttonLight"{
+				0%{
+					box-shadow: 0 0 20px rgba(0, 0, 0,0.8) inset,0 0 20px rgba(0,0,0,0.5);
+				}
+				25%{
+					box-shadow: 0 0 30px rgba(255, 255 ,0, 0.8) inset, 0 0 30px rgba(146,150,150,0.8);
+				}
+				50%{
+					box-shadow: 0 0 20px rgba(160,32,240,0.8) inset,0 0 20px rgba(255,255,255,1);
+				}
+				75%{
+					box-shadow: 0 0 30px rgba(255,255,255,0.8) inset,0 0 30px rgba(160,158,158,0.8);
+				}
+				100%{
+					box-shadow: 0 0 20px rgba(124,252,0,0.8) inset,0 0 20px rgba(170,168,168,0.5);
+				}
+			}
+			.player {
+				/*border: 1px solid deepskyblue;*/
+				background: rgba(0,0,0,0.5);
+				position: fixed;
+				right: 5%;
+				top: 5%;
+				z-index: 100;
+				width: 65px;
+				height: 28px;
+				border-radius: 16px;
+				/*调用animation属性，从而让按钮在载入页面时就具有动画效果*/
+				-webkit-animation-name: "buttonLight";
+				/*动画名称,需要跟keyframes定义的名称一致*/
+				-webkit-animation-duration: 5s;
+				/*动画持续时间*/
+				-webkit-animation-iteration-count: infinite;
+				/*动画循环播放的次数*/
+			}
+			
+			.music_play {
+				background-image: url(../img/stopmusic.png);
+				background-size: 100%;
+				opacity: 0.2;
+				/*background-color: rgba(0,0,0,0.1);*/
+				width: 65px;
+				height: 28px;
+			}

@@ -1,0 +1,705 @@
+/******基本样式******/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "黑体";
+}
+ul li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #777777;
+}
+.clear{	/*清除浮动*/
+	clear: both;
+}
+.filter{	/*图片遮罩层*/
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background-color:rgba(0,0,0,0.2);	//rgba格式的背景颜色, a:Alpha
+}
+
+	#user_menu ul {
+		width: 80px;
+		position: absolute;
+		padding-top:5px;
+		z-index: 100;
+	}
+	
+	#user_menu li {
+		width: 80px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #F3F3F3;
+	}
+	
+	#user_menu li:hover {
+		background-color: #5a5a5a;
+	}
+	#nav_right{
+		position: relative;
+	}
+	    /*后面添加的控件*/
+    	.song_picker {
+				/* border: 1px solid gray; */
+				width: 650px;
+				height: 350px;
+				margin: 10px 0;
+				float:left;
+			}
+			.text_jxgd{
+				height: 280px;
+			}
+			.text_follow {
+				font-size: 13px;
+				float: right;
+				margin-right: 300px;
+			}
+			.ul_for_border li{
+				margin-left:20px;
+			}
+			
+			.song_picker li {
+				list-style: none;
+				float: left;
+				text-align: center;
+				line-height: 35px;
+				width: 35px;
+				height: 35px;
+			}
+			
+			.change {
+				width: 650px;
+				/*height: 500px;*/
+				display: none;
+				
+			}
+			
+			.getli {
+				background: white;
+				color: dodgerblue;
+				border-bottom: none;
+			}
+			
+			.activity {
+				display: block;
+			}
+			
+			.clear:after {
+				content: "";
+				clear: both;
+				display: block;
+				/*after默认追加的是行级元素.所以需要转为块级*/
+			}
+			.itemContent{
+				width: 650px;
+				height: 280px;
+				overflow: hidden;
+			}
+			.tabC {
+				/*border: 1px blue solid;*/
+				width: 650px;
+				height: 450px;
+				margin-top: 0px;
+			}
+			.change li{
+			width: auto;
+			float: none;				
+			}
+			.change li:hover{
+				background: #f5f8fb;
+				color: #27a1f6;
+				
+			}
+			.change li .songName,.songTips{
+				margin-left: 10px;
+				float: left;
+			}
+			.songTime{
+				float: right;
+				margin-right: 20px;
+			}
+			.xgsf_pages{
+				width: 150px;
+				margin: auto;
+			}
+			.prev,.next{
+				width: 15px;
+				height: 15px;
+				margin-top: 3px;
+				background-size: 100%;
+			}
+			.prev,.page,.next{
+				float: left;
+				margin-right: 10px;
+				color: black;
+				background-repeat: no-repeat;
+			}
+			.change li .songName,.songTips{
+				margin-left: 10px;
+				float: left;
+				font-size:12px;
+			}
+			.songTime{
+				float: right;
+				margin-right: 20px;
+			}
+
+/******所有内容******/
+
+.con {
+	/*background: lightgray;*/
+	width: 100%;
+	height: 1620px;
+}
+
+
+/*****头部内容*****/
+
+.header {
+	margin: auto;
+	width: 1020px;
+	height: 75px;
+}
+
+.logo {
+	width: 175px;
+	height: 71px;
+	background-image: url(../img/kglogo.png);
+	float: left;
+}
+
+.head_search {
+	border: 1px solid gray;	/**/
+	padding-left: 10px;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-size:8% 60%;
+	background-position: 260px 8px;
+	vertical-align: middle;
+	height: 35px;
+	width: 280px;
+	margin: 16px 80px 0 20px;
+	float: left;
+}
+
+.head_link {
+	border-right: 1px solid #777777;	/**/
+	line-height: 30px;
+	width: 310px;
+	height: 30px;
+	margin-top: 22px;
+	float: left;
+	color: #777777;
+	font-weight: 800;
+	font-size: 14px;
+}
+
+.head_link li {
+	float: left;
+	margin-left: 30px;
+}
+
+.head_link li a {
+	color: #777777;
+}
+
+.head_link li a:hover {
+	color: dodgerblue;
+}
+
+.head_btn {
+	float: left;
+}
+
+#logon_btn,
+#login_btn {
+	border-radius: 5px;	/**/
+	border: none;	/**/
+	width: 50px;
+	height: 31px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+#logon_btn {
+	border: 1px solid #169af3;	/**/
+	background: #169af3;
+	color: white;
+	border: none;	/**/
+}
+
+#login_btn {
+	border: 1px solid #dbdbdb;	/**/
+	background: white;
+	color: #777777;
+}
+
+
+/*****导航内容*****/
+
+.nav {
+	height: 56px;
+	width: 100%;
+	background: #2c323b;
+}
+
+.nav_content {
+	width: 1010px;
+	margin: auto;
+}
+
+.nav_left li {
+	width: auto;
+	margin-left: 20px;
+	padding: 0 20px;
+	height: 54px;
+	line-height: 54px;
+	color: lightgray;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+
+.nav_left li a {
+	
+	color: lightgray;
+}
+
+.nav_left li:hover {
+	color: white;
+	background: #0c8ed9;
+}
+
+#img {
+	float: right;
+	width: 20px;
+	height: 10px;
+	background-image: url(../img/show.png);
+	background-size: 100%;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-right: 10px;
+	clear: right;
+}
+#more{
+	position: relative;
+}
+#hideul ul {
+	position: absolute;
+	margin-left: -40px;
+	z-index: 100;
+}
+
+#hideul li {
+	width: 100px;
+	background-color: #2c323b;
+}
+
+#hideul li:hover {
+	background-color: #5a5a5a;
+}
+
+.nav_right {
+	float: right;
+	color: white;
+}
+
+.nav_right li {
+	width: auto;
+	margin-right: 20px;
+	height: 54px;
+	line-height: 54px;
+	float: left;
+}
+
+.nav_right li a {
+	color: darkgray;
+	font-size: 14px;
+}
+.nav_right li a:hover {
+	color: deepskyblue;
+}
+/*****banner*****/
+.banner {
+				overflow: hidden;
+			}
+.banner	 li {
+				list-style: none;
+				float: left;
+			}
+#nav{
+				position: absolute;
+				top: 400px;
+				left: 600px;
+			}
+#goL,#goR {
+				width: 20px;
+				height: 50px;
+				position: absolute;
+				z-index: 100;
+				top: 150px;
+			}
+			
+			#goL {
+				left: 0;
+				width: 80px;
+				height: 160px;
+				background-size:100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/armL1.png);
+				/*background-color: black;*/
+				opacity: 0.4;
+			}
+			#goL:hover{
+				background-image: url(../img/armL2.png);
+			}
+			#goR {
+				left: 1250px;
+				width: 80px;
+				height: 160px;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-image: url(../img/armR1.png);
+				/*background-color: gray;*/
+				opacity: 0.4;
+			}
+			#goR:hover{
+				background-image: url(../img/armR2.png);
+			}
+#marqueeNav li{ 
+				margin: 0 10px;
+				border: 3px solid gray;	/**/
+				border-radius: 50px;
+				width: 10px;
+				height: 10px;
+				list-style: none;
+				float: left;
+				text-align: center;
+				color: transparent;
+			}
+.active{
+				background: white;
+			}
+.box {
+				position: relative;
+				width: 1920px;
+				margin: auto;
+			}
+
+/******中间内容部分******/
+.content{
+	width: 1003px;
+	/*height: 1000px;*/
+	margin: 20px auto;
+}
+/*****内容part1（精选歌单 & 热门榜单）*****/
+.part1_left{
+	width: 651px;
+	height: 388px;
+	float: left;
+}
+.part1_right{
+	width: 322px;
+	height: 388px;
+	float: right;
+}
+/****精选歌单****/
+.text_jxgd,.text_rmbd{
+	margin-bottom: 22px;
+	height: 34px;
+	line-height: 34px;
+	color: #777777;
+}
+.text_left{
+	font-size: 20px;
+}
+.text_right{
+	float: right;
+}
+.text_left a{color: #0C8ED9;}
+.con_jxgd{
+	height: 327px;
+}
+.jxgd_pic_left{
+	width: 326px;
+	height: 326px;
+	background-image: url(../img/jxgd01.jpg);
+	float: left;
+}
+.text_shedow{
+	width: 326px;
+	height: 35px;
+	line-height: 35px;
+	color: white;
+	background-color:rgba(0,0,0,0.4);	//rgba格式的背景颜色, a:Alpha
+	text-align: right;
+	margin-top:280px ;
+	font-weight: bold;
+}
+.jxgd_pic_right{
+	float: right;	
+	width: 320px;
+	margin-top: 2px;
+}
+
+.jxgd_pic_right img{
+	width: 155px;
+	height: 155px;
+	float: left;	
+}
+/****热门榜单****/
+.con_rmbd{
+	width: 320px;
+	height: 99px;
+	background-color: lightgray;
+	margin-bottom: 10px;
+}
+.con_rmbd_pic{
+	width: 99px;
+	height: 99px;
+	background-size: 100%;
+	float: left;
+}
+.con_rmbd1_text{
+	margin: 30px 0 0 20px;
+	height: 35px;
+	line-height: 35px;
+	float: left;
+}
+.arr{
+	margin: 39px 20px 0 0;
+	width: 15px;
+	height: 15px;
+	background-size: 100%;
+	background-image:url(../img/armR1.png);
+	background-repeat: no-repeat;
+	float: right;
+}
+.rmbd_pic1{
+		background-image: url(../img/biaosheng.jpg);
+}
+.rmbd_pic2{
+		background-image: url(../img/top500.jpg);
+}
+.rmbd_pic3{
+		background-image: url(../img/hongge.jpg);
+}
+
+/*****内容part3*****/
+.part3{
+	width: 1003px;
+	height: 320px;
+	margin: 20px auto;
+	
+}
+.part3 li{
+	border: dashed 1px gray; 	/**/
+	float: left;
+	margin: 10px;
+}
+.part3 li img{
+	width: 132px; 
+	height: 60px;
+}
+/*****内容part4*****/
+.part4{
+	width: 1003px;
+	height: 150px;
+	margin: 20px auto;
+}
+.part4 li{
+	float: left;
+	width: 100px;
+	margin: 10px 5px 10px 10px;
+}
+.part4 li a{
+	font-size: 13px;
+}
+.part4 li a:hover{
+	color: dodgerblue;
+}
+
+
+
+/******尾部******/
+
+.footer {
+	background: url(../img/foot_bg.png);
+}
+
+.foot_nav {
+	width: 100%;
+	height: 20px;
+	color: #777777;
+	background: url(../img/foot_bg.png);
+	height: 50px;
+}
+
+.foot_nav ul {
+	width: 900px;
+	margin: auto;
+}
+
+.foot_nav li {
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	border-right: 2px solid #777777;	/**/
+	height: 20px;
+	line-height: 20px;
+}
+
+.foot_nav li a {
+	font-weight: bold;
+	font-size: 12px;
+	color: #777777;
+	margin: 0px 15px;
+}
+
+.foot_nav li a:hover {
+	color: deepskyblue;
+}
+
+.foot_info {
+	width: 1343px;
+	height: 244px;
+	margin: auto;
+	background: url(../img/footer.PNG);
+}
+
+/*回到顶部*/
+ #goToTop {
+ 	background-image: url(../img/back2top.png);
+ 	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	width: 50px;
+ 	height: 50px;
+ 	position: fixed; 
+ 	bottom: 20%; 
+ 	right: 5%; }
+
+	/*登录弹窗背景遮罩层*/
+    .cover{
+        display:none;
+        width:1920px;
+        height:1020px;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:2;
+        background-color:#000;
+        opacity:0.5;
+    }
+    /* 登录弹窗 */
+    .mini_login{
+    	width: 400px;
+    	height: 400px;
+        display:none;
+        position: fixed; 
+        top: 20%;
+        left: 35%;
+        z-index:3;
+        background:white;
+        padding-left: 20px;
+    }
+
+    .cancle{		/*弹窗里面的 取消（叉）*/
+    	width: 16px;
+    	height: 16px;
+    	float: right;
+    	margin-right: 10px;
+    	margin-top: 10px;
+    	background-image: url(../img/XX.png);
+    	background-size: 100%;
+    }
+    
+    .login_text{	
+    	font-size: 23px;
+    	padding-left: 20px;
+    	margin-bottom: 20px;
+    }
+    .userinfo input{
+    	outline:none;
+    	width: 364px;
+    	height: 40px;
+    	margin-top: 20px;
+    	padding-left: 10px;
+    }
+    #submit{
+    	width: 364px;
+    	height: 40px;
+    	background: #2299ed;
+    	border-radius: 5px;
+    	margin-top: 20px;
+    	border: none;
+    	color: white;
+		font-size: 14px;
+		font-weight: bold;
+    }
+    .login_foot_text{
+    	margin-top: 20px; 
+    	font-size: 12px;
+    }
+    .login_foot_text a{
+      	float: left; 
+      	margin-right: 10px;
+      }
+    .login_foot_text a:hover{
+        	color: deepskyblue;
+        	text-decoration: underline;
+    }
+    @-webkit-keyframes "buttonLight"{
+				0%{
+					box-shadow: 0 0 20px rgba(0, 0, 0,0.8) inset,0 0 20px rgba(0,0,0,0.5);
+				}
+				25%{
+					box-shadow: 0 0 30px rgba(255, 255 ,0, 0.8) inset, 0 0 30px rgba(146,150,150,0.8);
+				}
+				50%{
+					box-shadow: 0 0 20px rgba(160,32,240,0.8) inset,0 0 20px rgba(255,255,255,1);
+				}
+				75%{
+					box-shadow: 0 0 30px rgba(255,255,255,0.8) inset,0 0 30px rgba(160,158,158,0.8);
+				}
+				100%{
+					box-shadow: 0 0 20px rgba(124,252,0,0.8) inset,0 0 20px rgba(170,168,168,0.5);
+				}
+			}
+	
+    /*音乐播放器*/
+    .player{
+    	/*border: 1px solid deepskyblue;*/
+    	position: fixed;
+    	left: 1%;
+    	top: 50%;
+    	z-index: 100;
+    	width: 65px; 
+    	height: 28px;
+    	border-radius: 16px;
+    	/*调用animation属性，从而让按钮在载入页面时就具有动画效果*/
+		-webkit-animation-name:"buttonLight";/*动画名称,需要跟keyframes定义的名称一致*/
+		-webkit-animation-duration: 5s;/*动画持续时间*/
+		-webkit-animation-iteration-count: infinite;/*动画循环播放的次数*/
+    }
+    .music_play{
+    	background-image: url(../img/stopmusic.png);
+    	background-size: 100%;
+    	opacity: 0.2;
+    	/*background-color: rgba(0,0,0,0.1);*/
+    	width: 65px; 
+    	height: 28px;
+    }
+
+
+    
+    
+    
+

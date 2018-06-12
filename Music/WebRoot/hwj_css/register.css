@@ -1,0 +1,141 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.icon-exclamation-sign{
+	color: red;
+}
+.icon-ok-sign{
+	color: green;
+}
+.box{
+	width: 960px;
+	height: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+	/*background-color: #f8fdff;*/
+	border: 6px solid #54ade7;
+	position: relative;
+}
+form{
+	position: absolute;
+	top: 125px;
+	left: 200px;
+}
+.box img{
+	position: absolute;
+	top: 32px;
+	left: 359px;
+}
+ul,li{
+	list-style-type: none;
+	padding-top: 10px;
+}
+.box ul li{
+	height: 35px;
+	/*border: 1px solid goldenrod;*/
+	line-height: 35px;
+	margin-top: 20px;
+}
+.box  ul li label{
+	display: inline-block;
+	/*border: 1px  solid darkgoldenrod;*/
+	width: 130px;
+	height: 35px;
+	line-height: 35px;
+	text-align: right;
+	float: left;
+	color: black;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.con{
+	margin: -7px -137px;
+}
+.box  ul li .title{
+	width: 300px;
+	height: 40px;
+	line-height: 35px;
+	float: left;
+	margin: 0px 10px;
+	border: 1px solid #abb5be;
+	border-radius:4px;
+	background-color: #f3f3f3;
+}
+.box  ul li .title1{
+	width: 180px;
+	height: 40px;
+	line-height: 35px;
+	float: left;
+	margin: 0px 10px;
+	border: 1px solid #abb5be;
+	border-radius:4px;
+	background-color: #f3f3f3;
+}
+.btn{
+	width: 80px;
+	height: 40px;
+	line-height: 35px;
+	margin-left: -154px;
+	background-color: #bbbbbb;
+	color: white;
+	border: none;
+	
+}
+.box  ul li .title2{
+	float: left;
+	margin: 0px 20px;
+
+	border-radius:4px;
+	/*background-color: #f4f9fd;*/
+}
+.box  ul li .title3{
+	float: left;
+	margin: 5px 148px;
+}
+.box  ul li .abc{
+	display: inline-block;
+	width: 180px;
+	height: 35px;
+	line-height: 35px;
+	/*border: 1px solid darkgoldenrod;*/
+	float: left;
+	font-size: 14px;
+	text-align: left;
+}
+.box ul li i.icon-exclamation-sign{
+	color: red;
+}
+.box ul li div.title{
+	border:none;
+	border-radius:none;
+	background-color: none;
+}
+.box ul li div.title input[value=man]{
+	margin-left:30px;
+}
+.box ul li div.title input[value=woman]{
+	margin-left:30px;
+}
+.box ul li:last-child{
+	height: 55px;
+	line-height: 55px;
+}
+.box ul li .title4{
+	height: 40px;
+	width: 92px;
+	line-height: 40px;
+	color: white;
+	font-size: 18px;
+	background-color: gray;/*背景为灰色*/
+	border: none;
+}
+
+.abcd{
+	float: left;
+	width: 20px;
+	height: 20px;
+}
+.tishi{
+	float: left;
+}
